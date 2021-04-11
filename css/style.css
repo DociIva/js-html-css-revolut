@@ -8,14 +8,102 @@ body {
 }
 
 /*Layout*/
-.container{
+.container { 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 /*header*/
 .header {
-    background: lightsalmon;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;   
+}
+
+/*navigazione left*/
+.nav-header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} 
+.nav-header-left > li {
+    list-style: none;
+}
+.nav-header-left > li a {
+    display: inline-block;
+    padding: 40px 20px;
+    text-decoration: none;
+    color: #191c1f;
+}
+.nav-header-left > li:last-child a {
+    color: #949697;
+}
+
+/*nav right*/
+.nav-header-right {
+    display: flex;
+    align-items: center;
+}
+.nav-header-right > li {
+    list-style: none;
+}
+.nav-header-right > li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #949697;
+}
+/*Btn white*/
+.nav-header-right .btn-w {
+    text-decoration: none;
+    border-radius: 0.75rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(25, 28, 31);
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.625em 1.5em;
+    margin: 0.5rem;
+}
+/*Btn-black*/
+.nav-header-right .btn-b {
+    text-decoration: none;
+    border-radius: 0.75rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 28, 31);
+    padding: 0.625em 1.5em;
+    margin-right: 2rem;
+}
+
+/*DROPDOWN list*/
+.nav-header-right li.with-dropdown {
+    position: relative; /*così si pos in pase al papà*/
+}
+.nav-header-right li.with-dropdown > a {
+    font-size: 18px;
+}
+.nav-header-right .dropdown-menu {
+    display:none; /*jQuery*/
+    position:absolute;
+    top:12%;
+    width:150px;
+    right: 30%;
+    padding: 20px 20px;
+    line-height: 3rem;
+    border-radius: 4px;
+    background: #fff;
+    filter:drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+.nav-header-right .dropdown-menu .box  {
+    list-style: none;
+}
+.nav-header-right .dropdown-menu .box a {
+   /* display:none;*/
+    text-decoration: none;
+    color: #949697;
 }
 
 /*Main content*/

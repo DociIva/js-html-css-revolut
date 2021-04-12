@@ -86,11 +86,10 @@ body {
     font-size: 18px;
 }
 .nav-header-right .dropdown-menu {
-    display:none; /*jQuery*/
+   /* display:none;*/ /*jQuery*/
     position:absolute;
-    top:12%;
-    width:150px;
-    right: 30%;
+    top:100%;
+    right: -40%;
     padding: 20px 20px;
     line-height: 3rem;
     border-radius: 4px;
